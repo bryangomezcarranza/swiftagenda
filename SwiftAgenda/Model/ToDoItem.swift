@@ -16,13 +16,15 @@ final class ToDoItem {
     var timeStamp: Date
     var isCritical: Bool?
     var isCompleted: Bool
+    var priority: String
     
-    init(title: String = "", notes: String = "", timeStamp: Date = .now, isCritical: Bool = false, isCompleted: Bool = false) {
+    init(title: String = "", notes: String = "", timeStamp: Date = .now, isCritical: Bool = false, isCompleted: Bool = false, priority: String = "All") {
         self.title = title
         self.notes = notes
         self.timeStamp = timeStamp
         self.isCritical = isCritical
         self.isCompleted = isCompleted
+        self.priority = priority
     }
     
 }

@@ -12,7 +12,7 @@ import SwiftData
 struct SwiftAgendaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SAHomeView()
         }.modelContainer(for: ToDoItem.self) // container set up for swift data 
     }
 }
