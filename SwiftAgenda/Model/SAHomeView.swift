@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct SAHomeView: View {
+    
+    @State private var selectedCategory: String = "All"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            //Header
+            SAHomeHeaderView()
+            
+            // PriorityFilterView
+            SAPriorityFilterView(selectedPriority: $selectedCategory)
+                .padding(.horizontal)
+           
+            // Todos
+            
+            // Create Button
+            
+        }
     }
 }
 

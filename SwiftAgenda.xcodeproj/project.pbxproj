@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B334D032A8F3ECA008FD1E9 /* SAHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334D022A8F3ECA008FD1E9 /* SAHomeHeaderView.swift */; };
+		5B334D052A8F43A9008FD1E9 /* SAPriorityFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334D042A8F43A9008FD1E9 /* SAPriorityFilterView.swift */; };
 		5B446D322A8EE79100F61D3D /* SwiftAgendaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B446D312A8EE79100F61D3D /* SwiftAgendaApp.swift */; };
 		5B446D342A8EE79100F61D3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B446D332A8EE79100F61D3D /* ContentView.swift */; };
 		5B446D362A8EE79800F61D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B446D352A8EE79800F61D3D /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B334D022A8F3ECA008FD1E9 /* SAHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAHomeHeaderView.swift; sourceTree = "<group>"; };
+		5B334D042A8F43A9008FD1E9 /* SAPriorityFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPriorityFilterView.swift; sourceTree = "<group>"; };
 		5B446D2E2A8EE79100F61D3D /* SwiftAgenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAgenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B446D312A8EE79100F61D3D /* SwiftAgendaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAgendaApp.swift; sourceTree = "<group>"; };
 		5B446D332A8EE79100F61D3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +59,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5B334D002A8F3EA7008FD1E9 /*  Components */ = {
+			isa = PBXGroup;
+			children = (
+				5B334D012A8F3EAF008FD1E9 /* SAHomeHeaderView */,
+			);
+			path = " Components";
+			sourceTree = "<group>";
+		};
+		5B334D012A8F3EAF008FD1E9 /* SAHomeHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				5B334D022A8F3ECA008FD1E9 /* SAHomeHeaderView.swift */,
+				5B334D042A8F43A9008FD1E9 /* SAPriorityFilterView.swift */,
+			);
+			path = SAHomeHeaderView;
+			sourceTree = "<group>";
+		};
 		5B446D252A8EE79100F61D3D = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +95,7 @@
 		5B446D302A8EE79100F61D3D /* SwiftAgenda */ = {
 			isa = PBXGroup;
 			children = (
+				5B334D002A8F3EA7008FD1E9 /*  Components */,
 				5B334CFF2A8F3DE2008FD1E9 /* Model */,
 				5B334CFE2A8F3DCE008FD1E9 /* Views */,
 				5B446D312A8EE79100F61D3D /* SwiftAgendaApp.swift */,
@@ -165,7 +187,9 @@
 				5B446D442A8EF9FF00F61D3D /* SAHomeView.swift in Sources */,
 				5B446D342A8EE79100F61D3D /* ContentView.swift in Sources */,
 				5B446D422A8EF58300F61D3D /* CreateItemView.swift in Sources */,
+				5B334D052A8F43A9008FD1E9 /* SAPriorityFilterView.swift in Sources */,
 				5B446D322A8EE79100F61D3D /* SwiftAgendaApp.swift in Sources */,
+				5B334D032A8F3ECA008FD1E9 /* SAHomeHeaderView.swift in Sources */,
 				5B446D402A8EEC4100F61D3D /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
