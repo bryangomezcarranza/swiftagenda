@@ -15,7 +15,9 @@ struct SAHomeView: View {
     @State private var showCreateSheet: Bool = false
     
     @Query private var todoItems: [ToDoItem]
+    @Environment(\.modelContext) var context
     
+    // Computed property to filter out items based on priority
     var items: [ToDoItem] {
         if(selectedPriority == "All") {
             return todoItems
@@ -35,12 +37,24 @@ struct SAHomeView: View {
             // Todos
             List {
                 ForEach(items) { item in
-                    Text(item.title)
-                }
+                    SAListItemView(item: item)
+                    /// Delete from SwiftData container
+                        .swipeActions {
+                            Button(role: .destructive) {
+                                context.delete(item)
+                            } label: {
+                                Image(systemName: "trash")
+                            }
+                        }
+                }.listRowSeparator(.hidden)
             }
+            .listStyle(.plain)
+            .padding(.horizontal, 5)
+            
             Spacer()
             // Create Button
             button.frame(height: 40)
+            Spacer(minLength: 30)
         }
     }
     
@@ -52,6 +66,7 @@ struct SAHomeView: View {
                 .foregroundColor(Color.secondary.opacity(0.2))
                 .overlay {
                     Text("create to do")
+                        .font(.brand(size: 16))
                         .tint(Color.black)
                 }
         }
@@ -60,9 +75,14 @@ struct SAHomeView: View {
             NavigationStack {
                 CreateItemView()
             }
-            .presentationDetents([.medium])
+            .presentationDragIndicator(.visible)
+            .presentationDetents([.small]) // uses custom detent
         })
     }
+    
+    
+    
+    
 }
 
 #Preview {

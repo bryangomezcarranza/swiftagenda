@@ -17,17 +17,17 @@ struct SAHomeHeaderView: View {
                     .frame(width: 60, height: 60)
                     .background(Color.green)
                     .clipShape(Circle())
-                VStack(alignment: .leading){
+                VStack(alignment: .leading, spacing: 10){
                     Text("personal to-do's")
-                        .font(.system(size: 20, weight: .bold))
+                        .font(.brand(size: 24, weight: .bold))
                     Text("hope you are achieving all your goals today")
-                        .font(.system(size: 12))
+                        .font(.brand(size: 12))
                         .foregroundStyle(Color.secondary)
                 }
             }
             Divider()
         }
-        .padding()
+        .padding(.horizontal)
     }
 }
 

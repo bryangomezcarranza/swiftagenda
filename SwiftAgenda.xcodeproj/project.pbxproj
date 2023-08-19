@@ -7,30 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B3311E82A912BE300FDA566 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3311E72A912BE300FDA566 /* Font.swift */; };
+		5B3311EE2A912DCF00FDA566 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B3311EB2A912D9000FDA566 /* Poppins-Bold.ttf */; };
+		5B3311EF2A912DD200FDA566 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B3311EC2A912DA000FDA566 /* Poppins-Medium.ttf */; };
+		5B3311F02A912DD500FDA566 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B3311ED2A912DB400FDA566 /* Poppins-Regular.ttf */; };
+		5B3311F12A912DD700FDA566 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B3311EA2A912D7B00FDA566 /* Poppins-Light.ttf */; };
 		5B334D032A8F3ECA008FD1E9 /* SAHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334D022A8F3ECA008FD1E9 /* SAHomeHeaderView.swift */; };
 		5B334D052A8F43A9008FD1E9 /* SAPriorityFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334D042A8F43A9008FD1E9 /* SAPriorityFilterView.swift */; };
-		5B334D072A8FF944008FD1E9 /* SAToDoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334D062A8FF944008FD1E9 /* SAToDoItemView.swift */; };
+		5B334D092A902F22008FD1E9 /* SAListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B334D082A902F22008FD1E9 /* SAListItemView.swift */; };
 		5B446D322A8EE79100F61D3D /* SwiftAgendaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B446D312A8EE79100F61D3D /* SwiftAgendaApp.swift */; };
-		5B446D342A8EE79100F61D3D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B446D332A8EE79100F61D3D /* ContentView.swift */; };
 		5B446D362A8EE79800F61D3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B446D352A8EE79800F61D3D /* Assets.xcassets */; };
 		5B446D392A8EE79800F61D3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B446D382A8EE79800F61D3D /* Preview Assets.xcassets */; };
 		5B446D402A8EEC4100F61D3D /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B446D3F2A8EEC4100F61D3D /* ToDoItem.swift */; };
 		5B446D422A8EF58300F61D3D /* CreateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B446D412A8EF58300F61D3D /* CreateItemView.swift */; };
 		5B446D442A8EF9FF00F61D3D /* SAHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B446D432A8EF9FF00F61D3D /* SAHomeView.swift */; };
+		5BD67CF32A913AC60053E949 /* CustomDetent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD67CF22A913AC60053E949 /* CustomDetent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B3311E72A912BE300FDA566 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		5B3311EA2A912D7B00FDA566 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		5B3311EB2A912D9000FDA566 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		5B3311EC2A912DA000FDA566 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		5B3311ED2A912DB400FDA566 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		5B334D022A8F3ECA008FD1E9 /* SAHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAHomeHeaderView.swift; sourceTree = "<group>"; };
 		5B334D042A8F43A9008FD1E9 /* SAPriorityFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAPriorityFilterView.swift; sourceTree = "<group>"; };
-		5B334D062A8FF944008FD1E9 /* SAToDoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAToDoItemView.swift; sourceTree = "<group>"; };
+		5B334D082A902F22008FD1E9 /* SAListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAListItemView.swift; sourceTree = "<group>"; };
 		5B446D2E2A8EE79100F61D3D /* SwiftAgenda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAgenda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B446D312A8EE79100F61D3D /* SwiftAgendaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftAgendaApp.swift; sourceTree = "<group>"; };
-		5B446D332A8EE79100F61D3D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5B446D352A8EE79800F61D3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B446D382A8EE79800F61D3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B446D3F2A8EEC4100F61D3D /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		5B446D412A8EF58300F61D3D /* CreateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateItemView.swift; sourceTree = "<group>"; };
 		5B446D432A8EF9FF00F61D3D /* SAHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SAHomeView.swift; sourceTree = "<group>"; };
+		5BD67CF12A912F320053E949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5BD67CF22A913AC60053E949 /* CustomDetent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDetent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +55,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B3311E62A912BCE00FDA566 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5B3311E92A912D2600FDA566 /* project_font */,
+				5B3311E72A912BE300FDA566 /* Font.swift */,
+				5BD67CF22A913AC60053E949 /* CustomDetent.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5B3311E92A912D2600FDA566 /* project_font */ = {
+			isa = PBXGroup;
+			children = (
+				5B3311EB2A912D9000FDA566 /* Poppins-Bold.ttf */,
+				5B3311EC2A912DA000FDA566 /* Poppins-Medium.ttf */,
+				5B3311ED2A912DB400FDA566 /* Poppins-Regular.ttf */,
+				5B3311EA2A912D7B00FDA566 /* Poppins-Light.ttf */,
+			);
+			path = project_font;
+			sourceTree = "<group>";
+		};
 		5B334CFE2A8F3DCE008FD1E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B446D432A8EF9FF00F61D3D /* SAHomeView.swift */,
 				5B446D412A8EF58300F61D3D /* CreateItemView.swift */,
 			);
 			path = Views;
@@ -55,7 +88,6 @@
 		5B334CFF2A8F3DE2008FD1E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5B446D432A8EF9FF00F61D3D /* SAHomeView.swift */,
 				5B446D3F2A8EEC4100F61D3D /* ToDoItem.swift */,
 			);
 			path = Model;
@@ -74,7 +106,7 @@
 			children = (
 				5B334D022A8F3ECA008FD1E9 /* SAHomeHeaderView.swift */,
 				5B334D042A8F43A9008FD1E9 /* SAPriorityFilterView.swift */,
-				5B334D062A8FF944008FD1E9 /* SAToDoItemView.swift */,
+				5B334D082A902F22008FD1E9 /* SAListItemView.swift */,
 			);
 			path = SAHomeHeaderView;
 			sourceTree = "<group>";
@@ -98,11 +130,12 @@
 		5B446D302A8EE79100F61D3D /* SwiftAgenda */ = {
 			isa = PBXGroup;
 			children = (
+				5BD67CF12A912F320053E949 /* Info.plist */,
+				5B3311E62A912BCE00FDA566 /* Util */,
 				5B334D002A8F3EA7008FD1E9 /*  Components */,
 				5B334CFF2A8F3DE2008FD1E9 /* Model */,
 				5B334CFE2A8F3DCE008FD1E9 /* Views */,
 				5B446D312A8EE79100F61D3D /* SwiftAgendaApp.swift */,
-				5B446D332A8EE79100F61D3D /* ContentView.swift */,
 				5B446D352A8EE79800F61D3D /* Assets.xcassets */,
 				5B446D372A8EE79800F61D3D /* Preview Content */,
 			);
@@ -176,7 +209,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B446D392A8EE79800F61D3D /* Preview Assets.xcassets in Resources */,
+				5B3311F12A912DD700FDA566 /* Poppins-Light.ttf in Resources */,
+				5B3311EF2A912DD200FDA566 /* Poppins-Medium.ttf in Resources */,
+				5B3311EE2A912DCF00FDA566 /* Poppins-Bold.ttf in Resources */,
 				5B446D362A8EE79800F61D3D /* Assets.xcassets in Resources */,
+				5B3311F02A912DD500FDA566 /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,12 +225,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B446D442A8EF9FF00F61D3D /* SAHomeView.swift in Sources */,
-				5B446D342A8EE79100F61D3D /* ContentView.swift in Sources */,
+				5B3311E82A912BE300FDA566 /* Font.swift in Sources */,
 				5B446D422A8EF58300F61D3D /* CreateItemView.swift in Sources */,
-				5B334D072A8FF944008FD1E9 /* SAToDoItemView.swift in Sources */,
+				5BD67CF32A913AC60053E949 /* CustomDetent.swift in Sources */,
 				5B334D052A8F43A9008FD1E9 /* SAPriorityFilterView.swift in Sources */,
 				5B446D322A8EE79100F61D3D /* SwiftAgendaApp.swift in Sources */,
 				5B334D032A8F3ECA008FD1E9 /* SAHomeHeaderView.swift in Sources */,
+				5B334D092A902F22008FD1E9 /* SAListItemView.swift in Sources */,
 				5B446D402A8EEC4100F61D3D /* ToDoItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +369,7 @@
 				DEVELOPMENT_TEAM = D5YK8XAHMK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftAgenda/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,6 +399,7 @@
 				DEVELOPMENT_TEAM = D5YK8XAHMK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftAgenda/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

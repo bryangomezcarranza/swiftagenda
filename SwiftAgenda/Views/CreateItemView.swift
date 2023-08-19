@@ -11,10 +11,6 @@ struct CreateItemView: View {
     
     @State private var todoItem = ToDoItem()
     
-//    @State private var nameOfItem: String = ""
-//    @State private var note: String = ""
-//    @State private var priority: String = ""
-    
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) var context
     
@@ -25,12 +21,17 @@ struct CreateItemView: View {
         
         NavigationStack {
             VStack(alignment: .leading) {
+                HStack {
+                    Text("choose priority level:")
+                        .font(.brand(size: 12))
+                    Spacer()
+                }
                 LazyVGrid(columns: columns) {
                     ForEach(data, id: \.self) { item in
                         Text(item)
                             .foregroundStyle(todoItem.priority == item ? .black : .white)
                             .padding()
-                            .frame(width: 120)
+                            .frame(width: 120, height: 40)
                             .background(todoItem.priority == item ? Color.secondary.opacity(0.5) : .black)
                             .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))
                             .foregroundColor(.white)
@@ -39,18 +40,17 @@ struct CreateItemView: View {
                             }
                     }
                 }
-                Spacer()
-                Text("how you feel today?")
-                    .monospaced()
-                TextField("what is there to do?", text: $todoItem.title)
+                .padding(.bottom)
+                Text("what is there to do?")
+                    .font(.brand(size: 16))
+                TextField("Ex: Gym today", text: $todoItem.title)
                     .textFieldStyle(.roundedBorder)
-                    .monospaced()
+                    .font(.brand(size: 16))
                 Text("create a swifty note")
                 TextField("Tell me... ", text: $todoItem.notes, axis: .vertical)
                     .textFieldStyle(.roundedBorder)
-                    .monospaced()
+                    .font(.brand(size: 16))
                 Spacer()
-                
                 Button {
                     saveItem()
                 } label: {
@@ -59,11 +59,11 @@ struct CreateItemView: View {
                         .overlay {
                             Text("Save")
                                 .tint(Color.black)
-                                .monospaced()
+                                .font(.brand(size: 16))
                                 .frame(maxWidth: .infinity)
                                 
                         }
-                        .frame(height: 60, alignment: .center)
+                        .frame(height: 40, alignment: .center)
                 }
             }
             .padding()

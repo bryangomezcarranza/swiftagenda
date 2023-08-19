@@ -13,12 +13,17 @@ struct SAPriorityFilterView: View {
     @Binding var selectedPriority: String
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
+        VStack(alignment: .center) {
+            HStack {
+                Text("priority level")
+                    .font(.brand(size: 12))
+                    
+                Spacer()
+            }
             HStack {
                 ForEach(priorities, id:\.self) { priority in
                     Text(priority)
-                        .monospaced()
-                        .font(.system(size:12))
+                        .font(.brand(size: 10))
                         .frame(minWidth: 60)
                         .frame(minHeight: 20)
                         .padding(6)
@@ -29,9 +34,11 @@ struct SAPriorityFilterView: View {
                             selectedPriority = priority
                         }
                 }
-                
-            }.padding()
+            }
+            .padding(.horizontal)
+            Divider()
         }
+        .padding()
     }
 }
 
