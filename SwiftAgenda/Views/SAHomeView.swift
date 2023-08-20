@@ -13,12 +13,15 @@ struct SAHomeView: View {
     //private var todoList: ToDoItem
     @State private var selectedPriority: String = "All"
     @State private var showCreateSheet: Bool = false
+    @State private var navigateToEditPage: Bool = false
     
-    @Query private var todoItems: [ToDoItem]
+    @Query(sort: \ToDoItem.title) private var todoItems: [ToDoItem]
     @Environment(\.modelContext) var context
     
     @State private var isPopupVisible = false
     @State private var selectedItem: ToDoItem?
+    @State private var selectedItemToEdit: ToDoItem?
+    
     
     
     // Computed property to filter out items based on priority
@@ -48,12 +51,22 @@ struct SAHomeView: View {
                             isPopupVisible = true
                         }
                         .swipeActions { /// Delete from SwiftData container
-                            Button(role: .destructive) {
-                                //print("Deleted Item: " + item.title)
-                                context.delete(item)
-                            } label: {
-                                Image(systemName: "trash")
+                            HStack {
+                                Button{
+                                    selectedItemToEdit = item
+                                    navigateToEditPage = true
+                                } label: {
+                                    Image(systemName: "pencil")
+                                    
+                                }.tint(Color.orange)
+                                Button(role: .destructive) {
+                                    //print("Deleted Item: " + item.title)
+                                    context.delete(item)
+                                } label: {
+                                    Image(systemName: "trash")
+                                }
                             }
+                           
                         }
                 }.listRowSeparator(.hidden)
             }
@@ -66,6 +79,12 @@ struct SAHomeView: View {
             button.frame(height: 40)
             Spacer(minLength: 30)
         }
+        .sheet(item: $selectedItemToEdit, onDismiss: {
+            selectedItemToEdit = nil
+        }, content: { item in
+            SAUpdateItemView(todoItem: item)
+                .presentationDetents([.small])
+        })//.presentationDetents([.small])
         .fullScreenCover(isPresented: Binding(get: { isPopupVisible }, set: { isPopupVisible = $0 })) { /// Fixes issue with not displaying data at first
             isPopupVisible = false
         }   content: {
