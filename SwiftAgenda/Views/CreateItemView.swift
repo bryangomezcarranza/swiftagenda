@@ -31,7 +31,7 @@ struct CreateItemView: View {
                         Text(item)
                             .foregroundStyle(todoItem.priority == item ? .black : .white)
                             .padding()
-                            .frame(width: 120, height: 40)
+                            .frame(width: 120, height: 35)
                             .background(todoItem.priority == item ? Color.secondary.opacity(0.5) : .black)
                             .clipShape(RoundedRectangle(cornerRadius: 10.0, style: .continuous))
                             .foregroundColor(.white)
